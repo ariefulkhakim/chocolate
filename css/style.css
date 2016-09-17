@@ -124,7 +124,7 @@ a, a:hover, a:focus {
   -ms-transition:all 0.7s ease 0s;
 }
 .navbar-toggle span{
-  color: #fff;
+  color: #000000;
 }
 ul.nav{
   margin: 0;
@@ -148,8 +148,9 @@ ul.nav{
   background-color: #fff;
 }
 .navbar-default .navbar-toggle {
-  border-color: #fff;
-  margin-top: 4px;
+  border-color: rgba(51, 51, 51, 0.71);
+  background-color: rgba(51, 51, 51, 0.71);
+  margin-top: 8px;
 }
 
 
