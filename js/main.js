@@ -53,14 +53,18 @@ function onScroll(event){
       var windowScrollPosTop = jQuery(window).scrollTop();
 
       if(windowScrollPosTop >= 200) {
-        jQuery(".logo").css({"margin-top": "-5px", "margin-bottom": "5px"});
+        jQuery(".navbar-brand").css({"margin-top": "-5px", "margin-bottom": "5px"});
         jQuery(".navbar-default").css({"margin-top": "-12px", "margin-bottom": "-12px"});
-        jQuery(".top-header").css({"background-color": "#fff", "border-bottom": "2px solid #eee"});
+        jQuery(".top-header").css({"background-color": "rgba(51, 51, 51, 0.64)", "border-bottom": "2px solid rgba(51, 51, 51, 0.64)"});
+        jQuery(".navbar-nav li a").css({"color": "white"});
+        jQuery(".navbar-nav li a:hover").css({"color": "red"});
       }
       else{
-        jQuery(".logo").css({"margin-top": "-5px", "border-bottom": "5px"});
+        jQuery(".navbar-brand").css({"margin-top": "-5px", "border-bottom": "5px"});
          jQuery(".navbar-default").css({"margin-top": "25px", "margin-bottom": "15px"});
           jQuery(".top-header").css({"background-color": "transparent", "border-bottom": "none"});
+          jQuery(".navbar-nav li a").css({"color": "black"});
+          jQuery(".navbar-nav li a:hover").css({"color": "red"});
         
       }
    });
@@ -68,6 +72,13 @@ function onScroll(event){
 });
 
 }) (jQuery);
+$(window).load(function() {
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+    $('body').delay(350).css({
+        'overflow': 'visible'
+    });
+});
 
 
 
@@ -89,5 +100,6 @@ $(document).ready(function() {
   });
  
 });
+
 
 

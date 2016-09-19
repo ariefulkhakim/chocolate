@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 	<link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
@@ -13,12 +14,13 @@
 	<link rel="shortcut icon" type="images/png" href="img/5.png"/>
 </head>
 <body>
+<div id="preloader"><div id="status"><div class="spinner">Loading...</div></div></div>
 <header class="top-header">
     <div class="container">
         <div class="row header-row">
             <div class="col-md-12">
                 <nav class="navbar navbar-default">
-                    <a class="navbar-brand" href="index.html"><i class="fa fa-star-half-o"></i> <b>CHOCO</b></a>
+                    <a class="navbar-brand" href="index.html"><b>CH</b><i class="fa fa-heart"></i><b>COLATE</b></a>
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -54,13 +56,13 @@
             <div class="row">
             	<div class="col-md-12">
             		<img src="img/5.png">	
-                	<h1 class="lie">WELCOME GALLERY CHOCOLATE</h1>
-                	<h3>Let's Join Now</h3>
+                	<h1 class="lie wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" style="color:black;">WELCOME GALLERY CHOCOLATE</h1>
+                	<a class="btn btn-top-white btn-lg" href="#"> Learn More</a>
             	</div>
             </div>
         </div>
 </section>
-<section class="home" id="sec1">
+<section class="home wow fadeInDown" data-wow-duration="2s" data-wow-delay="2s" id="sec1">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
@@ -97,7 +99,7 @@
 					<h1>SERVICE</h1>
 				</div>
 			</div>
-			<div class="col-lg-6 col-sm-6">
+			<div class="col-lg-6 col-sm-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="2s">
 				<div class="service-icon-wrap clearfix">
 					<div class="left-side-icon">
 						<i class="fa fa-car"></i>
@@ -116,7 +118,8 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac ipsum nec magna fermentum ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					</div>
 				</div>
-			</div><div class="col-lg-6 col-sm-6">
+			</div>
+			<div class="col-lg-6 col-sm-6 wow fadeInRight" data-wow-duration="2s" data-wow-delay="2s">
 				<div class="service-icon-wrap clearfix">
 					<div class="left-side-icon">
 						<i class="fa fa-university"></i>
@@ -156,7 +159,7 @@
             <div data-filter=".motion" class="cbp-filter-item">Motion</div>
         </div>
     </div>
-    <div id="js-grid-lightbox-gallery" class="cbp">
+    <div id="js-grid-lightbox-gallery" class="cbp wow fadeInRight" data-wow-duration="2s" data-wow-delay="2s">
         <div class="cbp-item web-design graphic print motion">
             <a href="ajax-lightbox-gallery/project1.html" class="cbp-caption cbp-singlePageInline" data-title="World Clock Widget" rel="nofollow">
                 <div class="cbp-caption-defaultWrap">
@@ -296,9 +299,9 @@
 		</div>
 	</div>
 </section>
-<section class="pricing1" id="sec4" >
+<section class="pricing1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" id="sec4" >
 	<div class="container">
-		<div class="row">
+		<div class="row"> 
 			<div class="col-sm-12 pricing">
 				<h1>BOOK MENU</h1>
 				<p>Ut lobortis auctor est, quis ornare orci tristique vel.</p>
@@ -352,7 +355,7 @@
 		<div class="row">
 			<div class="col-sm-12 testimonials">
 				<h1>BEST TEAM</h1>
-				<div class="col-md-12 text-center">
+				<div class="col-md-12 text-center wow fadeInRight" data-wow-duration="2s" data-wow-delay="2s">
 					<div id="testimonial-carousel" class="owl-carousel owl-spaced">
 						<div>
 							<img src="img/tes.jpg" class="img-responsive img-thumbnail">
@@ -375,7 +378,7 @@
 		</div>
 	</div>
 </section>
-<section class="contact1" id="sec6">
+<section class="contact1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" id="sec6">
 	<div class=" top-content inner-contact">
 		<div class="container">
 			<div class="row">
@@ -411,11 +414,16 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+              new WOW().init();
+</script>
 <script src="js/font-awesome-557efcb38e.js"></script>
-<!-- <script src="js/jquery.stellar.min.js"></script> -->
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.cubeportfolio.min.js"></script>
 <script src="js/cube.js"></script>
 <script src="js/main.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
