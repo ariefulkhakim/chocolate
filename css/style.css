@@ -1,7 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,400italic);
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font: 400 16px/1.8 'Dancing Script', serif;
 }
 a, a:hover, a:focus {
   color: #0dc0c0;
@@ -102,9 +104,9 @@ a, a:hover, a:focus {
     -ms-transition: all .3s;
     transition: all .3s;
 }
-h1 .lie{
+.lead{
   color: black;
-  font-weight: bold;
+  font: 400 16px/1.8 'Crimson Text', serif;
 }
 /*LOADER*/
 
@@ -212,13 +214,14 @@ h1 .lie{
   color: #000000;
 }
 ul.nav{
-  margin: 0;
-  padding: 0;
+  margin: 6px;
+  padding: 2px;
 }
 .navbar-default .navbar-nav li a {
   font-size: 12px;
-  color: #000000;
+  color: #fff;
   text-transform: uppercase;
+  font: 400 16px/1.8 'Crimson Text', serif;
   font-weight: 800;
   transition: all .7s ease 0s;
   -webkit-transition: all .7s ease 0s;
@@ -239,12 +242,15 @@ ul.nav{
 }
 @media only screen and (max-width: 768px) {
     ul.nav{
-        margin: 5px 0px;
+        margin: -43px 0px;
         padding: 0;
           }
     .navbar-default .navbar-nav li a  {
-        padding: 12px 10px;
+        padding: 7px 5px;
         }
+        .navbar-brand {
+    padding: -1px 0px;
+  }
 }
 @media only screen and (max-width: 320px) {
   .navbar-brand {
@@ -257,11 +263,7 @@ ul.nav{
 
 
 .banner{
-  background-image: url(../img/images.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 160px 0px;
+  padding: 0px 0px;
 }
 .banner h3{
   font-size: 30px;
@@ -281,8 +283,48 @@ ul.nav{
   color: #000000;
 }
 .banner img{
-  margin-top: 10px;
-  padding: 10px 0px;
+  margin-top: 15px;
+  padding: 15px 0px;
+}
+.bg-dark-alfa-30::after {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  content: '';
+  z-index: -1;
+}
+.module-image {
+  background-color: #222;
+  background-image: url(../img/contact.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+      background-size: cover;
+  padding: 347px 0px;
+}
+
+.video-background {
+  background-color: #000;
+}
+
+.intro {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translate(0%, -50%);
+     -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+     -o-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+  padding: 0px 0px;
 }
 
 
@@ -325,6 +367,37 @@ ul.nav{
     margin-left: 10px;
 }
 }
+
+/*Counter */
+.date-container {
+    background-color: #222;
+  background-image: url(../img/contact.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+      background-size: cover;
+      padding: 150px 0px;
+      color: #fff;
+}
+.counter {
+    text-align: center;
+    padding: 20px 0;
+}
+.fact i {
+  color: red;
+}
+.fact span {
+  font-size: 30px;
+}
+.fact h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
 
 /*HISTORY*/
 

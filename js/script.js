@@ -20,3 +20,23 @@
 				$(this).collapse('hide');
 			}
 		});
+
+			function HeroHeight() {
+			$('.heightfull').height($(window).height());
+		}
+
+		$('.slideshow').backstretch([
+			'assets/images/home-1.jpg',
+			'assets/images/home-2.jpg',
+			'assets/images/home-3.jpg'
+		], {duration: 3000, fade: 600});
+
+		
+		$('.intro-slider').owlCarousel({
+			paginationSpeed: 600,
+			pagination: false,
+			navigation: false,
+			singleItem: true,
+			slideSpeed: 600,
+			autoPlay: 3000
+		});
